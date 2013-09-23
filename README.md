@@ -1,10 +1,10 @@
-npo
+NPO
 ===
 
-NanoParticle Ontology
+NanoParticle Ontology -- please see http://nano-ontology.org for contributors, documentation, and other information.
 
 
-literature
+Literature
 ==========
 
 NanoParticle Ontology for cancer nanotechnology research
