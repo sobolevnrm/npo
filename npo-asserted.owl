@@ -867,9 +867,33 @@
     </owl:disjointWith>
   </owl:Class>
   <owl:Class rdf:ID="Lipid-Coated_Nanoparticle">
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="#Nanoparticle"/>
-    </rdfs:subClassOf>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Nanoparticle"/>
+          <owl:Restriction>
+            <owl:someValuesFrom>
+              <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                  <owl:Class rdf:ID="Lipid"/>
+                  <owl:Restriction>
+                    <owl:onProperty>
+                      <owl:ObjectProperty rdf:about="#has_role"/>
+                    </owl:onProperty>
+                    <owl:someValuesFrom>
+                      <owl:Class rdf:ID="Surface_Modifying_Agent"/>
+                    </owl:someValuesFrom>
+                  </owl:Restriction>
+                </owl:intersectionOf>
+              </owl:Class>
+            </owl:someValuesFrom>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="#has_component_part"/>
+            </owl:onProperty>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
     <preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >lipid-coated nanoparticle</preferred_Name>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -7071,9 +7095,33 @@
     >GO:0004713</dBXrefID>
   </owl:Class>
   <owl:Class rdf:ID="Polymer-Coated_Nanoparticle">
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="#Nanoparticle"/>
-    </rdfs:subClassOf>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Nanoparticle"/>
+          <owl:Restriction>
+            <owl:someValuesFrom>
+              <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                  <owl:Class rdf:ID="Polymer"/>
+                  <owl:Restriction>
+                    <owl:someValuesFrom>
+                      <owl:Class rdf:about="#Surface_Modifying_Agent"/>
+                    </owl:someValuesFrom>
+                    <owl:onProperty>
+                      <owl:ObjectProperty rdf:about="#has_role"/>
+                    </owl:onProperty>
+                  </owl:Restriction>
+                </owl:intersectionOf>
+              </owl:Class>
+            </owl:someValuesFrom>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="#has_component_part"/>
+            </owl:onProperty>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
     <preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >polymer-coated nanoparticle</preferred_Name>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -9661,7 +9709,7 @@
       <owl:Class rdf:about="#Iron"/>
     </owl:disjointWith>
   </owl:Class>
-  <owl:Class rdf:ID="Lipid">
+  <owl:Class rdf:about="#Lipid">
     <preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >lipid</preferred_Name>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -16005,7 +16053,7 @@ c) and this physical make-up is something which the bearer possesses because of 
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A "core" is a "particle site" which may be hollow, made of material, has void spaces, where other molecules or agents like drugs, imaging agents, etc. can be placed.</definition>
   </owl:Class>
-  <owl:Class rdf:ID="Polymer">
+  <owl:Class rdf:about="#Polymer">
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A polymer is a molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass.</definition>
     <dBXrefID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -26097,15 +26145,39 @@ suffix: -al</rdfs:comment>
     >An "imine group" is an "organic group", which has the structure -C(=N-)-, and the group is the characteristic of an "imine".</definition>
   </owl:Class>
   <owl:Class rdf:ID="Carbohydrate-Coated_Nanoparticle">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Nanoparticle"/>
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="#has_component_part"/>
+            </owl:onProperty>
+            <owl:someValuesFrom>
+              <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                  <owl:Class rdf:about="#Carbohydrate"/>
+                  <owl:Restriction>
+                    <owl:someValuesFrom>
+                      <owl:Class rdf:about="#Surface_Modifying_Agent"/>
+                    </owl:someValuesFrom>
+                    <owl:onProperty>
+                      <owl:ObjectProperty rdf:about="#has_role"/>
+                    </owl:onProperty>
+                  </owl:Restriction>
+                </owl:intersectionOf>
+              </owl:Class>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     ></rdfs:comment>
     <preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >carbohydrate-coated nanoparticle</preferred_Name>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A "nanoparticle," which has a coating agent, composed of a carbohydrate.</definition>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="#Nanoparticle"/>
-    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="#Dysprosium_Atom">
     <owl:disjointWith rdf:resource="#Lawrencium_Atom"/>
@@ -32158,13 +32230,37 @@ suffix: -oic acid</rdfs:comment>
     >"Homopolysaccharide" composed of glucose residues.</definition>
   </owl:Class>
   <owl:Class rdf:ID="Biopolymer-Coated_Nanoparticle">
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="#Nanoparticle"/>
-    </rdfs:subClassOf>
     <preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >biopolymer-coated nanoparticle</preferred_Name>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A "nanoparticle", which has a coating agent, composed of a biopolymer.</definition>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Nanoparticle"/>
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="#has_component_part"/>
+            </owl:onProperty>
+            <owl:someValuesFrom>
+              <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                  <owl:Class rdf:ID="Biopolymer"/>
+                  <owl:Restriction>
+                    <owl:onProperty>
+                      <owl:ObjectProperty rdf:about="#has_role"/>
+                    </owl:onProperty>
+                    <owl:someValuesFrom>
+                      <owl:Class rdf:about="#Surface_Modifying_Agent"/>
+                    </owl:someValuesFrom>
+                  </owl:Restriction>
+                </owl:intersectionOf>
+              </owl:Class>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
   </owl:Class>
   <owl:Class rdf:about="#Platinum">
     <owl:disjointWith rdf:resource="#Radon"/>
@@ -37652,7 +37748,7 @@ suffix: -oic acid</rdfs:comment>
                       <owl:ObjectProperty rdf:about="#has_role"/>
                     </owl:onProperty>
                     <owl:someValuesFrom>
-                      <owl:Class rdf:ID="Surface_Modifying_Agent"/>
+                      <owl:Class rdf:about="#Surface_Modifying_Agent"/>
                     </owl:someValuesFrom>
                   </owl:Restriction>
                 </owl:intersectionOf>
@@ -41621,7 +41717,7 @@ suffix: -oic acid</rdfs:comment>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Core part of a micelle formed by hydrophobic (non-polar) tails of individual amphiphilic molecules that form  the whole micelle in a polar solvent, which has void spaces to include other hydrophobic molecules.</definition>
   </owl:Class>
-  <owl:Class rdf:ID="Biopolymer">
+  <owl:Class rdf:about="#Biopolymer">
     <synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >biomacromolecule</synonym>
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -43633,7 +43729,31 @@ Suffix: -oyl halide</rdfs:comment>
     >A "nanoparticle" which has a coating agent, composed of dextran.</definition>
     <preferred_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >dextran-coated nanoparticle</preferred_Name>
-    <rdfs:subClassOf rdf:resource="#Nanoparticle"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Nanoparticle"/>
+          <owl:Restriction>
+            <owl:someValuesFrom>
+              <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                  <owl:Class rdf:about="#Dextran"/>
+                  <owl:Restriction>
+                    <owl:onProperty>
+                      <owl:ObjectProperty rdf:about="#has_role"/>
+                    </owl:onProperty>
+                    <owl:someValuesFrom rdf:resource="#Surface_Modifying_Agent"/>
+                  </owl:Restriction>
+                </owl:intersectionOf>
+              </owl:Class>
+            </owl:someValuesFrom>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="#has_component_part"/>
+            </owl:onProperty>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
   </owl:Class>
   <owl:Class rdf:about="#Aliphatic">
     <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
