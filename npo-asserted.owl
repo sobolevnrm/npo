@@ -346,7 +346,7 @@ Every P involves some C as agent (the C is involved in and is causally responsib
 
     <owl:ObjectProperty rdf:about="#has_datum_value">
         <definition rdf:datatype="&xsd;string"
-            >A relation which indicates the value of a property that can be quanitfied.</definition>
+            >A relation which indicates the value of a property that can be quantified.</definition>
         <preferred_Name rdf:datatype="&xsd;string">has datum value</preferred_Name>
         <rdfs:range rdf:resource="#NPO_1779"/>
         <rdfs:subPropertyOf rdf:resource="#has_relation_to"/>
@@ -441,7 +441,7 @@ Every P involves some C as agent (the C is involved in and is causally responsib
 
     <owl:ObjectProperty rdf:about="#has_output_participant">
         <definition rdf:datatype="&xsd;string"
-            >A relationship between a continuant and an occurrent that has other participating continuants, which holds iff at every time  t an instance of the occurrent is created, there is at least one instance of the continuant participating in it at time t1 &gt; t, and it is formed / derived  from the instances of those continuants that participate at time t.</definition>
+            >A relationship between a continuant and an occurrent that has other participating continuants, which holds if at every time  t an instance of the occurrent is created, there is at least one instance of the continuant participating in it at time t1 &gt; t, and it is formed / derived  from the instances of those continuants that participate at time t.</definition>
         <preferred_Name rdf:datatype="&xsd;string"
             >has output participant</preferred_Name>
         <rdfs:subPropertyOf rdf:resource="#has_participant"/>
@@ -485,7 +485,7 @@ visualization of cellular uptake of nanoparticles has_part imaging of nanopartic
         <rdfs:comment rdf:datatype="&xsd;string"
             >(source): OBO Relation Ontology (release version 0.99, date 07:14:2006);  Barry Smith et al, Relations in biomedical ontologies, Genome Biology (2005)</rdfs:comment>
         <definition rdf:datatype="&xsd;string"
-            >A relationship between a continuant and an occurrent, which holds iff at every time an instance of the occurrent is created, it has atleast one instance of the continuant participating in it  at the same time.</definition>
+            >A relationship between a continuant and an occurrent, which holds if at every time an instance of the occurrent is created, it has at least one instance of the continuant participating in it  at the same time.</definition>
         <rdfs:comment rdf:datatype="&xsd;string"
             >Examples:
 nanoparticle-mediated drug delivery has_participant drug-loaded nanoparticle</rdfs:comment>
@@ -566,7 +566,7 @@ nanoparticle-mediated drug delivery has_participant drug-loaded nanoparticle</rd
 
     <owl:ObjectProperty rdf:about="#has_single_bond_with">
         <definition rdf:datatype="&xsd;string"
-            >A relationship to indicate tnat one atom has a single covalent bond with another atom.</definition>
+            >A relationship to indicate that one atom has a single covalent bond with another atom.</definition>
         <preferred_Name rdf:datatype="&xsd;string"
             >has single bond with</preferred_Name>
         <rdfs:subPropertyOf rdf:resource="#has_bond_with"/>
@@ -637,7 +637,7 @@ nanoparticle-mediated drug delivery has_participant drug-loaded nanoparticle</rd
 
     <owl:ObjectProperty rdf:about="#inheres_in">
         <definition rdf:datatype="&xsd;string"
-            >A relation between a dependent continuant D and an entity E. D inheres_in E iff: given any d that instantiates D at t, there exists some e that instantiates E at t and d *inheres_in* e at t. Here *inheres_in* is the primitive instance level relation. [source: OBI]</definition>
+            >A relation between a dependent continuant D and an entity E. D inheres_in E if: given any d that instantiates D at t, there exists some e that instantiates E at t and d *inheres_in* e at t. Here *inheres_in* is the primitive instance level relation. [source: OBI]</definition>
         <preferred_Name rdf:datatype="&xsd;string">inheres in</preferred_Name>
         <rdfs:subPropertyOf rdf:resource="#has_relation_to"/>
         <rdfs:domain rdf:resource="&snap;DependentContinuant"/>
@@ -767,7 +767,7 @@ drug release from nanoparticle during systemic circulation part_of systemic circ
 
     <owl:ObjectProperty rdf:about="#participates_in">
         <definition rdf:datatype="&xsd;string"
-            >A relationship between a continuant and an occurrent, which holds iff at every time an instance of the continuant is created, it participates in atleast one instance of the occurrent at the same time.</definition>
+            >A relationship between a continuant and an occurrent, which holds iff at every time an instance of the continuant is created, it participates in at least one instance of the occurrent at the same time.</definition>
         <rdfs:comment rdf:datatype="&xsd;string"
             >Example:
 catalyst participates_in catalytic reaction
@@ -2519,7 +2519,7 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
         <rdfs:label rdf:datatype="&xsd;string">IC50</rdfs:label>
         <rdfs:subClassOf rdf:resource="#NPO_1338"/>
         <definition rdf:datatype="&xsd;string"
-            >&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;A measure of toxicity which is the concentration of a drug or inhibitor that is required to inhibit a biological process or a participant&#39;s activity in that process by half.  The realization of this realiable entity is the 50% inhibition of a biological process or the activity (molecular function) of a biological occurring chemical entity (e.g., gene, gene product)&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100430&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</definition>
+            >&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;A measure of toxicity which is the concentration of a drug or inhibitor that is required to inhibit a biological process or a participant&#39;s activity in that process by half.  The realization of this realizable entity is the 50% inhibition of a biological process or the activity (molecular function) of a biological occurring chemical entity (e.g., gene, gene product)&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100430&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</definition>
         <FULL_SYN rdf:datatype="&rdf;XMLLiteral"
             >&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;IC50&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</FULL_SYN>
         <preferred_Name rdf:datatype="&xsd;string">IC50</preferred_Name>
@@ -4322,7 +4322,7 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
             >average diameter</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PATO;PATO_0001334"/>
         <definition rdf:datatype="&rdf;XMLLiteral"
-            >&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A measure of diameter obtained by dividng a sum of several diameter values by the total number of values.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</definition>
+            >&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A measure of diameter obtained by dividing a sum of several diameter values by the total number of values.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</definition>
         <FULL_SYN rdf:datatype="&rdf;XMLLiteral"
             >&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;average diameter&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</FULL_SYN>
         <code rdf:datatype="&xsd;string">NPO_1366</code>
@@ -4418,7 +4418,7 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
             </owl:Class>
         </owl:equivalentClass>
         <definition rdf:datatype="&rdf;XMLLiteral"
-            >&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A nanoparticle which is bascially composed of silicon dioxide.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</definition>
+            >&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A nanoparticle which is basically composed of silicon dioxide.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</definition>
         <FULL_SYN rdf:datatype="&rdf;XMLLiteral"
             >&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;silica nanoparticle&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</FULL_SYN>
         <code rdf:datatype="&xsd;string">NPO_1373</code>
@@ -5018,7 +5018,7 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
             >&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;technique&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</FULL_SYN>
         <code rdf:datatype="&xsd;string">NPO_1405</code>
         <DesignNote rdf:datatype="&xsd;string"
-            >[DGT, June 10, 2010]: Description for a specific type of technique could contain the following types of information: 1) principle used in the technique (e.g. NMR for NMR spectroscopy), 2) description of the principle if the term that describes the principle is not represented in the ontology, 3) tool used in a technique (e.g., scanning electron microscope in scanning electron miroscopy), 4) applications of the technique, and 5) information on how to use the technique for each type of application.</DesignNote>
+            >[DGT, June 10, 2010]: Description for a specific type of technique could contain the following types of information: 1) principle used in the technique (e.g. NMR for NMR spectroscopy), 2) description of the principle if the term that describes the principle is not represented in the ontology, 3) tool used in a technique (e.g., scanning electron microscope in scanning electron microscopy), 4) applications of the technique, and 5) information on how to use the technique for each type of application.</DesignNote>
         <preferred_Name rdf:datatype="&xsd;string">technique</preferred_Name>
     </owl:Class>
     
@@ -5968,17 +5968,17 @@ fluorometer participates_in measurement of fluorescence intensity</rdfs:comment>
 
     <owl:Class rdf:about="#NPO_1442">
         <rdfs:label rdf:datatype="&xsd;string"
-            >scanning probe microsope</rdfs:label>
+            >scanning probe microscope</rdfs:label>
         <rdfs:subClassOf rdf:resource="#NPO_1437"/>
         <definition rdf:datatype="&rdf;XMLLiteral"
             >&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;A microscope which forms images of surfaces using a physical probe that scans the specimen and records the probe-surface interaction as a function of position.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</definition>
         <FULL_SYN rdf:datatype="&rdf;XMLLiteral"
-            >&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;scanning probe microsope&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</FULL_SYN>
+            >&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;scanning probe microscope&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</FULL_SYN>
         <dBXrefID rdf:datatype="&xsd;string">NCIT:C78803</dBXrefID>
         <code rdf:datatype="&xsd;string">NPO_1442</code>
         <synonym rdf:datatype="&xsd;string">SPM</synonym>
         <preferred_Name rdf:datatype="&xsd;string"
-            >scanning probe microsope</preferred_Name>
+            >scanning probe microscope</preferred_Name>
     </owl:Class>
     
 
@@ -8045,7 +8045,7 @@ By understanding different chemical environments, the chemical shift can be used
         <synonym rdf:datatype="&xsd;string"
             >time to maximum concentration</synonym>
         <synonym rdf:datatype="&xsd;string"
-            >time to peak concentation</synonym>
+            >time to peak concentration</synonym>
     </owl:Class>
     
 
@@ -11245,7 +11245,7 @@ By understanding different chemical environments, the chemical shift can be used
             >specific individual quality</rdfs:label>
         <rdfs:subClassOf rdf:resource="#NPO_1686"/>
         <definition rdf:datatype="&xsd;string"
-            >&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;An individual quallity which inheres in a single bearer AND specific to the type of bearer.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100427&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</definition>
+            >&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;An individual quality which inheres in a single bearer AND specific to the type of bearer.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100427&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</definition>
         <FULL_SYN rdf:datatype="&xsd;string"
             >&lt;ncicp:ComplexTerm xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:term-name&gt;specific individual quality&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</FULL_SYN>
         <code rdf:datatype="&xsd;string">NPO_1688</code>
@@ -12389,7 +12389,7 @@ By understanding different chemical environments, the chemical shift can be used
         <FULL_SYN rdf:datatype="&xsd;string"
             >&lt;ncicp:ComplexTerm xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:term-name&gt;sound wave&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</FULL_SYN>
         <code rdf:datatype="&xsd;string">NPO_1728</code>
-        <synonym rdf:datatype="&xsd;string">accoustic wave</synonym>
+        <synonym rdf:datatype="&xsd;string">acoustic wave</synonym>
         <preferred_Name rdf:datatype="&xsd;string">sound wave</preferred_Name>
     </owl:Class>
     
@@ -12698,7 +12698,7 @@ By understanding different chemical environments, the chemical shift can be used
 
     <owl:Class rdf:about="#NPO_1737">
         <rdfs:label rdf:datatype="&xsd;string"
-            >infrared radation</rdfs:label>
+            >infrared radiation</rdfs:label>
         <rdfs:subClassOf rdf:resource="#NPO_1732"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -12709,10 +12709,10 @@ By understanding different chemical environments, the chemical shift can be used
         <definition rdf:datatype="&xsd;string"
             >&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;An electromagnetic radiation which consists of waves with frequencies between 300 GHz and 400 THz (1 GHz = 10^9 Hz, 1 THz = 10^12 Hz), and with wavelengths between 1 mm and 750 nm.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100608&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</definition>
         <FULL_SYN rdf:datatype="&xsd;string"
-            >&lt;ncicp:ComplexTerm xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:term-name&gt;infrared radation&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</FULL_SYN>
+            >&lt;ncicp:ComplexTerm xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:term-name&gt;infrared radiation&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</FULL_SYN>
         <code rdf:datatype="&xsd;string">NPO_1737</code>
         <preferred_Name rdf:datatype="&xsd;string"
-            >infrared radation</preferred_Name>
+            >infrared radiation</preferred_Name>
     </owl:Class>
     
 
@@ -12972,7 +12972,7 @@ By understanding different chemical environments, the chemical shift can be used
         <rdfs:label rdf:datatype="&xsd;string">heat energy</rdfs:label>
         <rdfs:subClassOf rdf:resource="#NPO_1746"/>
         <definition rdf:datatype="&xsd;string"
-            >&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;Kinetic energy which is associated with randomnly moving atoms or molecules.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100608&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</definition>
+            >&lt;ncicp:ComplexDefinition xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:def-definition&gt;Kinetic energy which is associated with randomly moving atoms or molecules.&lt;/ncicp:def-definition&gt;&lt;ncicp:Definition_Review_Date&gt;100608&lt;/ncicp:Definition_Review_Date&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:Definition_Reviewer_Name&gt;Dennis Thomas&lt;/ncicp:Definition_Reviewer_Name&gt;&lt;/ncicp:ComplexDefinition&gt;</definition>
         <FULL_SYN rdf:datatype="&xsd;string"
             >&lt;ncicp:ComplexTerm xmlns:ncicp=&quot;http://ncicb.nci.nih.gov/xml/owl/EVS/ComplexProperties.xsd#&quot;&gt;&lt;ncicp:term-name&gt;heat energy&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</FULL_SYN>
         <code rdf:datatype="&xsd;string">NPO_1749</code>
