@@ -19464,6 +19464,7 @@ By understanding different chemical environments, the chemical shift can be used
     </owl:Class>
     
 
+
     <!-- http://purl.bioontology.org/ontology/npo#NPO_2001 -->
 
     <owl:Class rdf:about="#NPO_2001">
@@ -19515,6 +19516,100 @@ By understanding different chemical environments, the chemical shift can be used
         <code rdf:datatype="&xsd;string">NPO_1545</code>
         <preferred_Name rdf:datatype="&xsd;string">zirconium oxide</preferred_Name>
     </owl:Class>
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_2003 -->
+
+    <owl:Class rdf:about="#NPO_2003">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >zirconium (I) oxide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#NPO_2002"/>
+        <definition rdf:datatype="&rdf;XMLLiteral"
+            >&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;An oxide of zirconium having the chemical formula Zr2O.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</definition>
+        <FULL_SYN rdf:datatype="&rdf;XMLLiteral"
+            >&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;zirconium (I) oxide&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</FULL_SYN>
+        <synonym rdf:datatype="&xsd;string">Zr2O</synonym>
+        <code rdf:datatype="&xsd;string">NPO_2003</code>
+        <preferred_Name rdf:datatype="&xsd;string"
+            >zirconium (I) oxide</preferred_Name>
+    </owl:Class>
+
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_2005 -->
+
+    <owl:Class rdf:about="#NPO_2005">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >zirconium (I) oxide nanoparticle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#NPO_2001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#has_component_part"/>
+                        <owl:someValuesFrom rdf:resource="#NPO_2003"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <definition rdf:datatype="&rdf;XMLLiteral"
+            >&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;An zirconium oxide nanoparticle which is basically composed of zirconium (I) oxide.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</definition>
+        <FULL_SYN rdf:datatype="&rdf;XMLLiteral"
+            >&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;zirconium (I) oxide nanoparticle&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</FULL_SYN>
+        <synonym rdf:datatype="&xsd;string"
+            >Zr2O nanoparticle</synonym>
+        <code rdf:datatype="&xsd;string">NPO_1548</code>
+        <preferred_Name rdf:datatype="&xsd;string"
+            >zirconium (I) oxide nanoparticle</preferred_Name>
+    </owl:Class>
+
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1547 -->
+
+    <owl:Class rdf:about="#NPO_2004">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >zirconium (II) oxide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#NPO_2002"/>
+        <definition rdf:datatype="&rdf;XMLLiteral"
+            >&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;An oxide of zirconium having the chemical formula ZrO.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</definition>
+        <FULL_SYN rdf:datatype="&rdf;XMLLiteral"
+            >&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;zirconium (II) oxide&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</FULL_SYN>
+        <synonym rdf:datatype="&xsd;string">ZrO</synonym>
+        <code rdf:datatype="&xsd;string">NPO_2004</code>
+        <preferred_Name rdf:datatype="&xsd;string"
+            >zirconium (II) oxide</preferred_Name>
+    </owl:Class>
+
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_2006 -->
+
+    <owl:Class rdf:about="#NPO_2006">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >zirconium (II) oxide nanoparticle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#NPO_2001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#has_component_part"/>
+                        <owl:someValuesFrom rdf:resource="#NPO_2004"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <definition rdf:datatype="&rdf;XMLLiteral"
+            >&lt;ncicp:ComplexDefinition&gt;&lt;ncicp:def-source&gt;NPO&lt;/ncicp:def-source&gt;&lt;ncicp:def-definition&gt;An zirconium oxide nanoparticle which is basically composed of zirconium (II) oxide.&lt;/ncicp:def-definition&gt;&lt;/ncicp:ComplexDefinition&gt;</definition>
+        <FULL_SYN rdf:datatype="&rdf;XMLLiteral"
+            >&lt;ncicp:ComplexTerm&gt;&lt;ncicp:term-name&gt;zirconium (II) oxide nanoparticle&lt;/ncicp:term-name&gt;&lt;ncicp:term-group&gt;PT&lt;/ncicp:term-group&gt;&lt;ncicp:term-source&gt;NCI&lt;/ncicp:term-source&gt;&lt;/ncicp:ComplexTerm&gt;</FULL_SYN>
+        <synonym rdf:datatype="&xsd;string"
+            >Zr2O nanoparticle</synonym>
+        <code rdf:datatype="&xsd;string">NPO_1548</code>
+        <preferred_Name rdf:datatype="&xsd;string"
+            >zirconium (II) oxide nanoparticle</preferred_Name>
+    </owl:Class>
+
 
 
     <!-- http://purl.bioontology.org/ontology/npo#NPO_203 -->
